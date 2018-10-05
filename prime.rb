@@ -10,15 +10,11 @@
 # end
 
 
-def prime? num
-  for d in 2..(num - 1)
-  if (num == -1)
-    return false
-   elsif (num % d) == 0
-    return false
-  
-   end
+def is_prime(num)
+  n = 2
+  while n < num
+    return false if num % n == 0
+    n += 1
   end
-
   true
- end
+end
